@@ -1,0 +1,29 @@
+{
+  "name": "cypress-demoproj",
+  "version": "1.0.0",
+  "description": "Cypress Demo Project",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open --e2e --browser chrome"
+  },
+  "keywords": [
+    "Cypress",
+    "Javascript",
+    "Typescript",
+    "Testing"
+  ],
+  "author": "Abhyuday Singh Pal",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "@testing-library/cypress": "^10.0.1",
+    "cy-verify-downloads": "^0.2.3",
+    "cypress": "^13.6.6",
+    "cypress-file-upload": "^5.0.8",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress-real-events": "^1.12.0"
+  }
+}
