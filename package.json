@@ -17,6 +17,7 @@
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
     "@testing-library/cypress": "^10.0.1",
+    "@types/cypress": "^1.1.3",
     "cy-verify-downloads": "^0.2.3",
     "cypress": "^13.6.6",
     "cypress-file-upload": "^5.0.8",

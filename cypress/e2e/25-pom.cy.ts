@@ -17,7 +17,7 @@ describe("Page Object Model", () => {
 
   it("Unsuccessful Login", () => {
     LoginPage.submitLogin("wronguser", "wrongpwd");
-    // Assertion
+    // Assertions
     LoginPage.loginMessageElement.should(
       "contain",
       "Invalid username or password!"
