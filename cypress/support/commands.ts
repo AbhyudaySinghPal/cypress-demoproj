@@ -40,4 +40,6 @@ Cypress.Commands.add("login", (username: string, password: string) => {
   cy.get("#userName").type(username);
   cy.get("#password").type(password);
   cy.get("#login").click();
+  cy.wait(7000);
+  cy.location().url().should("contain", "profile");
 });

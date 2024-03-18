@@ -21,3 +21,14 @@ import "cypress-file-upload";
 require("cy-verify-downloads").addCustomCommand();
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// beforeEach("Global Login Preserve", () => {
+//   cy.session("mySession", () => {
+//     cy.visit(`${Cypress.env("demoQA")}/login`);
+//     cy.get("#userName").type("test");
+//     cy.get("#password").type("Test1234*");
+//     cy.get("#login").click();
+//     cy.wait(7000);
+//     cy.url().should("contain", "profile");
+//   });
+// });
