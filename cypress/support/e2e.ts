@@ -18,6 +18,7 @@ import "./commands";
 import "./exceptions";
 import "cypress-real-events";
 import "cypress-file-upload";
+import "cypress-mochawesome-reporter/register";
 require("cy-verify-downloads").addCustomCommand();
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

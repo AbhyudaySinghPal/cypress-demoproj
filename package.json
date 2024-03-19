@@ -4,7 +4,8 @@
   "description": "Cypress Demo Project",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open --e2e --browser chrome"
+    "cypress:open": "cypress open --e2e --browser chrome",
+    "cypress:run": "cypress run --e2e --browser chrome --spec cypress/e2e/29-sharing-fixture.cy.ts"
   },
   "keywords": [
     "Cypress",
@@ -21,6 +22,7 @@
     "cy-verify-downloads": "^0.2.3",
     "cypress": "^13.6.6",
     "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2",
     "typescript": "^5.4.2"
   },
   "dependencies": {
