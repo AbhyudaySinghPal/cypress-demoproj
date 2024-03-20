@@ -1,5 +1,10 @@
 import { defineConfig } from "cypress";
+
+// Verify Downloads
 const { verifyDownloadTasks } = require("cy-verify-downloads");
+
+// Faker
+const { faker } = require("@faker-js/faker");
 
 export default defineConfig({
   reporter: "cypress-mochawesome-reporter",
@@ -26,6 +31,7 @@ export default defineConfig({
     },
     env: {
       demoQA: "https://demoqa.com",
+      uiTesting: "http://uitestingplayground.com",
     },
   },
 });
