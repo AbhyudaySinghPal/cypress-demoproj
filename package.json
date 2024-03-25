@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open --e2e --browser chrome",
-    "cypress:run": "cypress run --e2e --browser chrome --spec cypress/e2e/29-sharing-fixture.cy.ts"
+    "cypress:run": "cypress run --e2e --browser chrome --spec cypress/e2e/34-apiTestingDemo.cy.ts --record --key 74257afd-bf83-4ba8-8f69-95133a378337",
+    "cypress-dashboard-parallel": "cypress run --e2e --browser chrome --spec cypress/e2e/parallel-test/*.ts --record --key 74257afd-bf83-4ba8-8f69-95133a378337"
   },
   "keywords": [
     "Cypress",

@@ -7,6 +7,9 @@ const { verifyDownloadTasks } = require("cy-verify-downloads");
 const { faker } = require("@faker-js/faker");
 
 export default defineConfig({
+  // Cypress Cloud
+  projectId: "jy535g",
+  // Mochawesome reporter and config
   reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     charts: true,
@@ -28,6 +31,19 @@ export default defineConfig({
       on("task", verifyDownloadTasks);
       // for the mochawesome reporter
       require("cypress-mochawesome-reporter/plugin")(on);
+      //Faker
+      on("task", {
+        freshUser() {
+          let user = {
+            username: faker.name.firstName(),
+            email: faker.internet.email(),
+            password: faker.internet.password(),
+            registeredAt: faker.date.past(),
+            vehicle: faker.vehicle.vehicle(),
+          };
+          return user;
+        },
+      });
     },
     env: {
       demoQA: "https://demoqa.com",
