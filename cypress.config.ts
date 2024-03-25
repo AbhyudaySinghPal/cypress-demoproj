@@ -48,6 +48,7 @@ export default defineConfig({
     env: {
       demoQA: "https://demoqa.com",
       uiTesting: "http://uitestingplayground.com",
+      theInternet: "https://the-internet.herokuapp.com",
     },
   },
 });
