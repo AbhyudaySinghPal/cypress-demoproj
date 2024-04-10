@@ -27,8 +27,8 @@ class Login extends Common {
   // Functions to Act upon the DOM elements in specific page
   submitLogin(uname: string, pwd: string): void {
     this.usernameElement.type(uname);
-    cy.get(this.password).type(pwd);
-    cy.get(this.loginBtn).click();
+    this.passwordElement.type(pwd);
+    this.loginBtnElement.click();
   }
 
   visit(): void {
